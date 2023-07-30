@@ -1,4 +1,5 @@
 import { useState } from "react";
+import styles from "./IncrementDecrement.modules.css";
 
 // if we dont use "useState" incrementdecrement function will not re-run hence ui will not updated 
 
@@ -38,6 +39,7 @@ const[counter, setCounter] = useState(0);
 <button onClick={plusButtonHandler}>+</button>
 
 {/*Label Number */}
+<div className={counter<0 ? styles.counterDanger: styles.counter}>{counter}</div>
 {/* {number} */}
 {counter}
 {/*Decrement Button */}

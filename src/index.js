@@ -12,8 +12,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <HelloComponent name={"Surbhi"} standard={"10"}/> */}
-    <ByeComponent />
-    <IncrementDecrement />
+    {/* <ByeComponent />
+    <IncrementDecrement /> */}
     <App />
   </React.StrictMode>
 );
