@@ -8,6 +8,7 @@ import App from './App';
 import ByeComponent from './ByeComponent';
 
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -15,6 +16,9 @@ root.render(
     {/* <ByeComponent />
     <IncrementDecrement /> */}
     <App />
+   
+    
+
   </React.StrictMode>
 );
 
