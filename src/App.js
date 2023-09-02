@@ -1,12 +1,17 @@
-import HelloComponent from "./HelloComponent";
+// import HelloComponent from "./HelloComponent";
 // import IncrementDecrement from "./IncrementDecrementCounter/IncrementDecrement";
 // import ByeComponent from "./ByeComponent";
 // import Parent from "./ParentChild/Parent";
 // import Child from "./ParentChild/Child";
 // import StudentDetails from"./ListComponent/StudentDetails";
 // import MultipleState from './MultipleState';
-import ParentCommunication from "./ParentChild/CommunicationChildToChild/ParentCommunication";
+// import ParentCommunication from "./ParentChild/CommunicationChildToChild/ParentCommunication";
+// import Forms from "./Formsfilling/forms";
+// import PokeAPi from "./PokemonApi/PokeApi";
+// import Count from "./useStateReact/useStatetry";
 // import React { useState } from "react";
+import Hello from "./classComponentIntro/IncDecComponent";
+
 
 
 
@@ -61,7 +66,17 @@ function App(){
 
   {/* <MultipleState /> */}
 
-  <ParentCommunication />
+  {/* <ParentCommunication /> */}
+
+  {/* <Forms /> */}
+  {/* <Count /> */}
+
+  {/* <PokeAPi /> */}
+
+
+  <Hello />
+
+
 
 
    {/*Key props should be unique for each child in the list
@@ -71,6 +86,8 @@ function App(){
    READ AN ARTICE iNDEX IS A KEY IS AN ANTI-PATTERN BY ROBIN POKORNY*/}
 
    {/*parent talk to child via the props...*/}
+
+   
 
 
     </>

@@ -5,9 +5,12 @@ import './index.css';
 // import reportWebVitals from './reportWebVitals';
 // import IncrementDecrement from './IncrementDecrementCounter/IncrementDecrement';
 import App from './App';
+import RouteApp from './RouteApp/RouteApp';
+import { BrowserRouter } from 'react-router-dom';
 // import ByeComponent from './ByeComponent';
 // import IncDecComponent from './classComponentIntro/IncDecComponent'
 // import Hello from './classComponentIntro/IncDecComponent';
+
 
 
 
@@ -18,10 +21,14 @@ root.render(
     {/* <HelloComponent name={"Surbhi"} standard={"10"}/> */}
     {/* <ByeComponent />
     <IncrementDecrement /> */}
-    <App />
+    {/* <App /> */}
     {/* <Hello /> */}
     {/* <MultipleState /> */}
-   
+    
+
+    <BrowserRouter>
+    <RouteApp />
+    </BrowserRouter>
     
 
   </React.StrictMode>
