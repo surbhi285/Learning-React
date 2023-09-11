@@ -7,6 +7,7 @@ import './index.css';
 import App from './App';
 import RouteApp from './RouteApp/RouteApp';
 import { BrowserRouter } from 'react-router-dom';
+import { ChakraProvider } from '@chakra-ui/react';
 // import ByeComponent from './ByeComponent';
 // import IncDecComponent from './classComponentIntro/IncDecComponent'
 // import Hello from './classComponentIntro/IncDecComponent';
@@ -27,8 +28,11 @@ root.render(
     
 
     <BrowserRouter>
+    <ChakraProvider>
     <RouteApp />
+    </ChakraProvider>
     </BrowserRouter>
+
     
 
   </React.StrictMode>

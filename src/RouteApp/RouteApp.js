@@ -7,6 +7,10 @@ import { Link, NavLink } from "react-router-dom";
 import styles from './RouteApp.css'
 
 function RouteApp(){
+    const user={
+        name: "john",
+        age: 30,
+    };
     return(
         <>
         <h1>Main Page</h1>
@@ -57,7 +61,7 @@ function RouteApp(){
         <Route path="*" element={<NotFound />}>
             {""}
             </Route>
-            <Route path="/home" element={<>This is hOMe page</> }>
+            <Route path="/home"  element={<>This is hOMe page</> }>
             {""}
             </Route>
 
@@ -65,7 +69,7 @@ function RouteApp(){
             {""}
             </Route>
 
-            <Route path="/contacts" element={<Conatact/>}>
+            <Route path="/contacts" element={(props)=><Conatact{...props} user={user} />}>
             {""}
             </Route>
 

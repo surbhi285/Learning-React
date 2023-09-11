@@ -10,7 +10,9 @@
 // import PokeAPi from "./PokemonApi/PokeApi";
 // import Count from "./useStateReact/useStatetry";
 // import React { useState } from "react";
-import Hello from "./classComponentIntro/IncDecComponent";
+// import Hello from "./classComponentIntro/IncDecComponent";
+
+
 
 
 
@@ -74,9 +76,10 @@ function App(){
   {/* <PokeAPi /> */}
 
 
-  <Hello />
+  {/* <Hello /> */}
 
 
+   
 
 
    {/*Key props should be unique for each child in the list
