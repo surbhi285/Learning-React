@@ -5,9 +5,19 @@ import './index.css';
 // import reportWebVitals from './reportWebVitals';
 // import IncrementDecrement from './IncrementDecrementCounter/IncrementDecrement';
 import App from './App';
-import RouteApp from './RouteApp/RouteApp';
-import { BrowserRouter } from 'react-router-dom';
-import { ChakraProvider } from '@chakra-ui/react';
+import BasicReduxFunctionApp from './Redux/BasicRedux/BasicReduxFunctionApp';
+import basicReduxstore from './Redux/BasicRedux/store/Store';
+import { Provider } from 'react-redux';
+import ExampleComponent from './Redux/BasicRedux/ExapmleComponent';
+import CounterRedux from './Redux/Redux-ToolKit/ReduxCounter/ReduxCounter';
+import bigStore, { CounterSlice } from './Redux/Redux-ToolKit/ReduxCounter/Store/Store';
+import gitHubStore from './Redux/GithubUser/store/gitHubStore';
+import GitHubComponent from './Redux/GithubUser/gitHubUserComponent';
+import gitApiStore from './Redux/GitApiCall/Store/GitApiStore';
+import GitApiComponent from './Redux/GitApiCall/GitApiComponent';
+// import RouteApp from './RouteApp/RouteApp';
+// import { BrowserRouter } from 'react-router-dom';
+// import { ChakraProvider } from '@chakra-ui/react';
 // import ByeComponent from './ByeComponent';
 // import IncDecComponent from './classComponentIntro/IncDecComponent'
 // import Hello from './classComponentIntro/IncDecComponent';
@@ -26,13 +36,34 @@ root.render(
     {/* <Hello /> */}
     {/* <MultipleState /> */}
     
-
+{/* 
     <BrowserRouter>
     <ChakraProvider>
     <RouteApp />
     </ChakraProvider>
-    </BrowserRouter>
+    </BrowserRouter> */}
 
+
+    {/* -----------------Redux--------------- */}
+
+
+    {/* <Provider store={basicReduxstore()}> 
+    <BasicReduxFunctionApp />
+    <ExampleComponent />
+    </Provider> */}
+
+    {/* <Provider store={bigStore}>
+     <CounterRedux />
+    </Provider> */}
+
+{/* 
+    <Provider store={gitHubStore()}>
+      <GitHubComponent />
+    </Provider> */}
+
+    <Provider store={gitApiStore()}>
+      <GitApiComponent />
+    </Provider>
     
 
   </React.StrictMode>
